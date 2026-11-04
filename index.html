@@ -1,466 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khuddus Shariff - Java Backend Developer</title>
-    <meta name="description" content="Portfolio of Khuddus Shariff - Java Backend Developer with 3+ years experience in Spring Boot, Microservices, and MOSIP platform">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khuddus Shariff — Senior Backend Engineer</title>
+  <meta name="description" content="Khuddus Shariff — Senior Backend Engineer (Java, Spring Boot, Microservices, Apache Kafka, AWS). 4+ years building production systems for Intuit QuickBooks Online Accountant and MOSIP, plus AI-assisted engineering with Claude Code.">
+  <meta name="theme-color" content="#0b0d12">
+  <meta property="og:title" content="Khuddus Shariff — Senior Backend Engineer">
+  <meta property="og:description" content="Java · Spring Boot · Microservices · Kafka · AWS · Claude Code">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230b0d12'/><text x='50%' y='56%' text-anchor='middle' dominant-baseline='middle' font-family='monospace' font-size='28' font-weight='700' fill='%23d97757'>KS</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">Khuddus Shariff</a>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link" data-section="home">Home</a>
-                <a href="#about" class="nav-link" data-section="about">About</a>
-                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
-                <a href="#experience" class="nav-link" data-section="experience">Experience</a>
-                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
-                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
 
-    <!-- Hero Section -->
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="logo"><span class="logo-mark">KS</span><span class="logo-text">khuddus<span class="accent">.dev</span></span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#about" data-section="about">About</a>
+        <a href="#experience" data-section="experience">Experience</a>
+        <a href="#claude" data-section="claude">AI&nbsp;+&nbsp;Claude</a>
+        <a href="#skills" data-section="skills">Skills</a>
+        <a href="#projects" data-section="projects">Projects</a>
+        <a href="#contact" data-section="contact">Contact</a>
+        <a href="assets/Khuddus_Shariff_Resume.pdf" class="btn btn-sm btn-primary nav-cta" download>Résumé</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
     <section class="hero" id="home">
-        <div class="hero-particles"></div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-greeting">Hi, I'm <span class="gradient-text">Khuddus Shariff</span></h1>
-                <div class="hero-title">
-                    <span id="typewriter"></span>
-                    <span class="cursor">|</span>
-                </div>
-                <p class="hero-description">Results-driven developer with 3+ years of expertise in architecting scalable microservices solutions</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
-                </div>
-            </div>
-            <div class="hero-avatar">
-                <div class="avatar-placeholder">
-                    <span>KS</span>
-                </div>
-            </div>
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="status-pill"><span class="dot"></span> Senior Backend Engineer · Bengaluru, India</p>
+          <h1>Building <span class="grad">resilient backend systems</span> that run at national scale.</h1>
+          <p class="hero-sub">
+            I'm <strong>Khuddus Shariff</strong> — 4+ years designing Java &amp; Spring Boot microservices, event-driven
+            pipelines with Apache Kafka, and secure identity platforms. Today I own <strong>5 production microservices</strong>
+            on Intuit's QuickBooks Online Accountant, and I build <strong>multi-agent automation with Claude Code</strong>.
+          </p>
+          <div class="typer mono"><span class="prompt">$</span> <span id="typewriter"></span><span class="caret"></span></div>
+          <div class="hero-actions">
+            <a href="#experience" class="btn btn-primary">View my work</a>
+            <a href="assets/Khuddus_Shariff_Resume.pdf" class="btn btn-ghost" download>Download résumé</a>
+          </div>
+          <ul class="hero-social">
+            <li><a href="https://www.linkedin.com/in/khuddus-shariff-7131b7207/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.4 8.1h4.2V23H.4V8.1zM8.3 8.1h4v2h.06c.56-1.06 1.93-2.18 3.97-2.18 4.25 0 5.03 2.8 5.03 6.43V23h-4.2v-7.6c0-1.81-.03-4.14-2.52-4.14-2.53 0-2.92 1.97-2.92 4.01V23H8.3V8.1z"/></svg>
+            </a></li>
+            <li><a href="https://github.com/khuddusshariff0022" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+            </a></li>
+            <li><a href="mailto:khuddusshariff0022@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h20v14H2V5zm2 2v.4l8 5.2 8-5.2V7H4zm16 2.8-8 5.2-8-5.2V17h16V9.8z"/></svg>
+            </a></li>
+          </ul>
         </div>
+
+        <div class="hero-card reveal" aria-label="Service snapshot">
+          <div class="window">
+            <div class="window-bar"><span></span><span></span><span></span><p class="mono">ks@prod:~/services</p></div>
+            <pre class="mono code"><code><span class="c">// what I'm running in production</span>
+<span class="k">@Service</span>
+<span class="k">public class</span> <span class="t">KhuddusShariff</span> {
+
+  <span class="t">String</span>  role       = <span class="s">"Senior Backend Engineer"</span>;
+  <span class="t">int</span>     yearsExp   = <span class="n">4</span>;
+  <span class="t">int</span>     prodSvcs   = <span class="n">5</span>;   <span class="c">// Intuit QBOA</span>
+  <span class="t">String</span>  stack      = <span class="s">"Java 21 · Spring · Kafka"</span>;
+  <span class="t">String</span>  aiPartner  = <span class="s">"Claude Code + MCP"</span>;
+
+  <span class="k">@Retryable</span>(maxAttempts = <span class="n">3</span>)
+  <span class="t">Result</span> <span class="f">ship</span>(<span class="t">Problem</span> p) {
+    <span class="k">return</span> design(p)
+      .test()      <span class="c">// 90%+ coverage</span>
+      .observe()   <span class="c">// Splunk · PagerDuty</span>
+      .deploy();   <span class="c">// Jenkins → K8s</span>
+  }
+}</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="metrics reveal">
+          <li><span class="metric-num" data-count="500" data-suffix="M+">0</span><span class="metric-label">identity users served by MOSIP</span></li>
+          <li><span class="metric-num" data-count="60" data-prefix="~" data-suffix="%">0</span><span class="metric-label">API latency cut via Redis caching</span></li>
+          <li><span class="metric-num" data-count="30" data-suffix="%">0</span><span class="metric-label">throughput gain with Java 21 virtual threads</span></li>
+          <li><span class="metric-num" data-count="10000" data-suffix="+">0</span><span class="metric-label">encrypted packets processed daily</span></li>
+        </ul>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section class="section about-section" id="about">
-        <div class="container">
-            <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Results-driven Java Backend Developer with 3 years of expertise architecting and implementing scalable microservices solutions using Java 21, Spring Boot, and Apache Kafka. Proven track record of optimizing system performance by 45% and contributing to MOSIP, a globally-adopted digital identity platform serving 500M+ users across multiple countries.</p>
-                    <p>Demonstrated excellence in modernizing legacy systems, implementing enterprise-grade security solutions, and delivering high-performance applications processing 50GB+ daily data volumes.</p>
-                </div>
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number" data-target="3">0</div>
-                        <div class="stat-label">Years Experience</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number" data-target="25">0</div>
-                        <div class="stat-label">Microservices</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number" data-target="500">0</div>
-                        <div class="stat-label">Million Users Served</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number" data-target="99">0</div>
-                        <div class="stat-label">% System Uptime</div>
-                    </div>
-                </div>
-            </div>
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="section-head reveal">
+          <p class="eyebrow mono">01 · about</p>
+          <h2>Backend engineer who owns it end&#8209;to&#8209;end.</h2>
         </div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>
+              I design and build scalable <strong>Java and Spring Boot microservices</strong>, RESTful APIs, and
+              <strong>event-driven systems</strong> with Apache Kafka. At Persistent Systems I work on Intuit's
+              QuickBooks Online Accountant (QBOA) platform, where I own five production services and handle
+              service mesh migration, production incident response, and Jenkins CI/CD for Kubernetes deployments.
+            </p>
+            <p>
+              Before that I spent three years building core registration and identity services for
+              <strong>MOSIP</strong> — an open-source national digital identity platform serving 500M+ people —
+              delivering AES-256/RSA/PKI encryption workflows, Redis caching optimisation, and a Java 21 modernisation.
+            </p>
+            <p>
+              Lately I've been pairing that backend depth with <strong>AI-assisted engineering</strong>: I built a
+              multi-agent Claude Code system for bug triage and daily status reporting that my team uses every day.
+            </p>
+          </div>
+          <ul class="about-facts reveal">
+            <li><span class="fact-k mono">location</span><span>Bengaluru, India</span></li>
+            <li><span class="fact-k mono">current</span><span>Persistent Systems → Intuit QBOA</span></li>
+            <li><span class="fact-k mono">focus</span><span>Microservices · Distributed systems · Reliability</span></li>
+            <li><span class="fact-k mono">education</span><span>MCA, VTU (2021) · B.Com, Kuvempu (2018)</span></li>
+            <li><span class="fact-k mono">certified</span><span>PG Program, Full Stack Engineering — NIIT StackRoute</span></li>
+            <li><span class="fact-k mono">languages</span><span>English · Hindi · Kannada · Urdu</span></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="section skills-section" id="skills">
-        <div class="container">
-            <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming & Frameworks</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Java</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="90"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Spring Boot</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Spring Security</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="80"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Hibernate</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="80"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Architecture & Integration</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Microservices</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="90"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>RESTful APIs</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Apache Kafka</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="80"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Event-Driven Architecture</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Data & Storage</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>PostgreSQL</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>MySQL</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="80"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Redis</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="75"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>DevOps & Tools</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Git</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="90"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Docker</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="80"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Maven</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow mono">02 · experience</p>
+          <h2>Where I've shipped.</h2>
         </div>
+
+        <ol class="timeline">
+          <li class="job reveal">
+            <div class="job-meta">
+              <p class="job-date mono">Oct 2025 — Present</p>
+              <p class="job-tag">Client: Intuit · QBOA</p>
+            </div>
+            <div class="job-body card">
+              <h3>Senior Software Engineer (Backend)</h3>
+              <p class="job-co">Persistent Systems Ltd.</p>
+              <div class="chips">
+                <span>Matchmaking</span><span>Tier</span><span>Client Insight</span><span>Client Portfolio</span><span>Client Orchestration</span>
+              </div>
+              <ul class="bullets">
+                <li>Own development and production support for <strong>5 Java/Spring Boot microservices</strong> on Intuit's QBOA platform.</li>
+                <li>Delivered the <strong>Matchmaking Service</strong>, improving certification-processing efficiency by <strong>20%</strong>.</li>
+                <li>Led migration of the Tier Service's Identity calls to a <strong>service mesh</strong> and shipped it to production; fixed a related Client Insight mesh config issue and verified both rollouts in Splunk across E2E and prod.</li>
+                <li>Resolved a production outage in an Apache Pulsar client by tracing a multi-stage <strong>Spring Cloud Config</strong> failure chain to root cause; hardened it with <code>@Retryable</code>/<code>@Recover</code>, fail-fast fallback and optimistic locking.</li>
+                <li>Lead incident response with <strong>PagerDuty, Splunk and Slack</strong>, driving triage and RCA.</li>
+                <li>Built and maintain <strong>Jenkins CI/CD</strong> pipelines with Gatling performance testing; debug Kubernetes (IKS) deployments.</li>
+                <li>Remediated dependency vulnerabilities across services and supported PI/PII compliance reviews involving AWS IAM and RDS.</li>
+                <li class="hl">Built a custom <strong>multi-agent automation system with Claude Code</strong> for bug triage and verified daily status reporting — now in active use across the team. <a href="#claude">See how ↓</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="job reveal">
+            <div class="job-meta">
+              <p class="job-date mono">Nov 2022 — Sep 2025</p>
+              <p class="job-tag">Project: MOSIP</p>
+            </div>
+            <div class="job-body card">
+              <h3>Software Engineer <span class="muted">· promoted from Junior SE</span></h3>
+              <p class="job-co">CyberPwn Technologies Pvt. Ltd.</p>
+              <div class="chips">
+                <span>Registration Processor</span><span>ID Repository</span><span>Registration Client</span><span>Pre-Registration</span><span>ID Authentication</span>
+              </div>
+              <ul class="bullets">
+                <li>Built and maintained core registration and identity services for <strong>MOSIP</strong>, a national digital identity platform serving <strong>500M+ users</strong>.</li>
+                <li>Cut API response time by <strong>~60%</strong> (≈2s → under 800ms) by redesigning the Redis caching strategy.</li>
+                <li>Modernised the Packet Manager with <strong>Java 21 virtual threads</strong>, raising throughput by <strong>30%</strong> and reducing latency.</li>
+                <li>Implemented secure packet handling with <strong>AES-256 and RSA</strong>, processing 10,000+ packets daily.</li>
+                <li>Built <strong>Kafka</strong> producers/consumers and <strong>Apache Camel</strong> routes for event-driven communication across registration stages.</li>
+                <li>Contributed to ID Repository (UIN/VID generation, encrypted credential issuance) and IDA (OTP, e-KYC for partners) using AES-256, RSA and PKI.</li>
+                <li>Maintained secure data-exchange flows with Policy Management handling 5,000+ transactions/day.</li>
+                <li>Contributed to a Java upgrade keeping backward compatibility across <strong>25+ dependent services</strong>.</li>
+                <li>Added multilingual notifications, MinIO object-store I/O with in-memory encryption, and <strong>150+ JUnit/Mockito tests</strong> at 90%+ coverage.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="job reveal">
+            <div class="job-meta">
+              <p class="job-date mono">Sep 2020 — Nov 2021</p>
+              <p class="job-tag">Internship</p>
+            </div>
+            <div class="job-body card">
+              <h3>Trainee Intern</h3>
+              <p class="job-co">Verzio Private Limited</p>
+              <ul class="bullets">
+                <li>Supported software development through debugging, testing, and feature contributions across ongoing projects.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
     </section>
 
-    <!-- Experience Section -->
-    <section class="section experience-section" id="experience">
-        <div class="container">
-            <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="experience-card">
-                            <div class="experience-header">
-                                <h3>Software Engineer - Registration Processor Team</h3>
-                                <span class="company">CyberPwn Technologies Pvt Ltd</span>
-                                <span class="duration">Apr 2024 – Present</span>
-                            </div>
-                            <ul class="achievements">
-                                <li>Architected multilingual notification system supporting 10+ languages, improving user engagement by 30%</li>
-                                <li>Spearheaded Java 21 migration across 25+ microservices, enhancing processing throughput by 40%</li>
-                                <li>Optimized event-driven workflows using Kafka and Apache Camel, reducing processing time by 35%</li>
-                                <li>Delivered production-ready features for MOSIP's core identity verification serving 500M+ global users</li>
-                            </ul>
-                            <div class="tech-tags">
-                                <span class="tech-tag">Java 21</span>
-                                <span class="tech-tag">Spring Boot</span>
-                                <span class="tech-tag">Kafka</span>
-                                <span class="tech-tag">Apache Camel</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                                <span class="tech-tag">Redis</span>
-                                <span class="tech-tag">Docker</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="experience-card">
-                            <div class="experience-header">
-                                <h3>Packet Manager Technical Developer</h3>
-                                <span class="company">CyberPwn Technologies Pvt Ltd</span>
-                                <span class="duration">Apr 2023 – Apr 2024</span>
-                            </div>
-                            <ul class="achievements">
-                                <li>Modernized legacy packet processing system to Java 21, achieving 60% performance improvement</li>
-                                <li>Implemented enterprise-grade security with AES-256 and RSA encryption, processing 10K+ secure packets daily</li>
-                                <li>Developed 150+ comprehensive test cases, increasing code coverage from 65% to 92%</li>
-                                <li>Engineered Object Store integration with in-memory encryption, processing 50GB+ daily volumes</li>
-                            </ul>
-                            <div class="tech-tags">
-                                <span class="tech-tag">Java 17</span>
-                                <span class="tech-tag">Spring Boot</span>
-                                <span class="tech-tag">Angular 14</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                                <span class="tech-tag">Docker</span>
-                                <span class="tech-tag">JWT</span>
-                                <span class="tech-tag">REST APIs</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="experience-card">
-                            <div class="experience-header">
-                                <h3>DataShare Module Developer</h3>
-                                <span class="company">CyberPwn Technologies Pvt Ltd</span>
-                                <span class="duration">Nov 2022 – Apr 2023</span>
-                            </div>
-                            <ul class="achievements">
-                                <li>Built secure data exchange platform handling 5K+ daily transactions with 99.9% uptime</li>
-                                <li>Redesigned Redis caching architecture, reducing API response times from 2000ms to 800ms (60% improvement)</li>
-                                <li>Achieved 90%+ test coverage through comprehensive integration testing</li>
-                                <li>Established monitoring and alerting systems for proactive performance bottleneck identification</li>
-                            </ul>
-                            <div class="tech-tags">
-                                <span class="tech-tag">Java 11/21</span>
-                                <span class="tech-tag">Spring Boot</span>
-                                <span class="tech-tag">Kafka</span>
-                                <span class="tech-tag">Apache Camel</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                                <span class="tech-tag">Redis</span>
-                                <span class="tech-tag">Docker</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Claude -->
+    <section class="section claude" id="claude">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow mono">03 · ai-assisted engineering</p>
+          <h2>How I build with <span class="claude-word">Claude</span>.</h2>
+          <p class="lead">
+            AI doesn't replace engineering judgement — it multiplies it. I use <strong>Claude Code</strong> and the
+            <strong>Model Context Protocol (MCP)</strong> to automate the toil around shipping software, so more of my
+            time goes to design, reliability and review.
+          </p>
         </div>
+
+        <!-- Flagship -->
+        <article class="flagship card reveal">
+          <div class="flagship-copy">
+            <p class="badge"><span class="spark" aria-hidden="true">✳</span> Flagship · in daily team use</p>
+            <h3>Multi-agent bug triage &amp; status reporting</h3>
+            <p>
+              A custom multi-agent system built on Claude Code that takes over two recurring chores on the QBOA team:
+              triaging incoming bugs and producing a <strong>verified</strong> daily status report. Each agent has one
+              narrow job, and a verification step checks claims against their sources before anything is reported.
+            </p>
+            <ul class="ticks">
+              <li>Specialised agents with narrow, well-defined responsibilities</li>
+              <li>MCP connections so agents read real context instead of guessing</li>
+              <li>A verification pass before output — no unverified claims in the report</li>
+              <li>A human stays in the loop for every decision that matters</li>
+            </ul>
+          </div>
+          <div class="flow" aria-label="Agent pipeline diagram">
+            <div class="flow-node in"><span class="mono">01</span><p>Signals</p><small>new bugs · tickets · activity</small></div>
+            <div class="flow-arrow" aria-hidden="true"></div>
+            <div class="flow-node agent"><span class="mono">02</span><p>Triage agent</p><small>classify · dedupe · prioritise</small></div>
+            <div class="flow-arrow" aria-hidden="true"></div>
+            <div class="flow-node agent"><span class="mono">03</span><p>Verifier agent</p><small>cross-checks against sources</small></div>
+            <div class="flow-arrow" aria-hidden="true"></div>
+            <div class="flow-node out"><span class="mono">04</span><p>Daily report</p><small>reviewed · shared with team</small></div>
+          </div>
+        </article>
+
+        <!-- Usage grid -->
+        <div class="use-grid">
+          <article class="card use reveal">
+            <div class="use-ico" aria-hidden="true">⌕</div>
+            <h3>Incident &amp; RCA support</h3>
+            <p>Tracing failure chains across config, logs and code faster — the same discipline I used to pin down a multi-stage Spring Cloud Config outage, with Claude as a second pair of eyes.</p>
+          </article>
+          <article class="card use reveal">
+            <div class="use-ico" aria-hidden="true">✓</div>
+            <h3>Tests &amp; coverage</h3>
+            <p>Drafting JUnit/Mockito cases and edge-case lists for new code paths, then reviewing every assertion before it lands.</p>
+          </article>
+          <article class="card use reveal">
+            <div class="use-ico" aria-hidden="true">⛨</div>
+            <h3>Dependency hygiene</h3>
+            <p>Working through vulnerability remediation across services: reading changelogs, spotting breaking changes and planning safe upgrade paths.</p>
+          </article>
+          <article class="card use reveal">
+            <div class="use-ico" aria-hidden="true">⇄</div>
+            <h3>MCP integrations</h3>
+            <p>Connecting Claude to the tools a team already uses through the Model Context Protocol, so automation works on live context.</p>
+          </article>
+          <article class="card use reveal">
+            <div class="use-ico" aria-hidden="true">✎</div>
+            <h3>Code review &amp; refactoring</h3>
+            <p>Using Claude Code for a first-pass review and mechanical refactors, keeping design decisions and the final call with engineers.</p>
+          </article>
+          <article class="card use reveal">
+            <div class="use-ico" aria-hidden="true">◧</div>
+            <h3>This portfolio</h3>
+            <p>Redesigned and rebuilt with Claude Code from my résumé — a small, real example of the workflow above.</p>
+          </article>
+        </div>
+
+        <div class="principles reveal">
+          <p class="mono eyebrow">my rules for AI in production work</p>
+          <ol>
+            <li><strong>Verify, don't trust.</strong> Every agent output is checked against its source.</li>
+            <li><strong>Narrow agents win.</strong> Small, single-purpose agents beat one do-everything prompt.</li>
+            <li><strong>Protect data.</strong> PI/PII rules apply to AI tooling exactly as they do to services.</li>
+            <li><strong>Humans own decisions.</strong> Automation removes toil, not accountability.</li>
+          </ol>
+        </div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="section projects-section" id="projects">
-        <div class="container">
-            <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>Enterprise Kanban Project Management System</h3>
-                        <p>Architected full-stack project management solution with Spring Boot microservices backend and Angular frontend</p>
-                        <div class="project-features">
-                            <h4>Key Features:</h4>
-                            <ul>
-                                <li>RESTful API architecture supporting role-based access control for 100+ concurrent users</li>
-                                <li>JWT-based authentication system with refresh token mechanism</li>
-                                <li>Responsive UI with drag-and-drop functionality, improving productivity by 40%</li>
-                                <li>Containerized application with Docker, reducing deployment time by 83%</li>
-                            </ul>
-                        </div>
-                        <div class="project-impact">
-                            <strong>Impact:</strong> 40% productivity improvement, 83% deployment time reduction
-                        </div>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Spring Boot</span>
-                            <span class="tech-tag">Angular</span>
-                            <span class="tech-tag">JWT</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/khuddusshariff0022" target="_blank" class="btn btn-outline">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>MOSIP Digital Identity Platform Contribution</h3>
-                        <p>Contributed to open-source digital identity platform adopted by 15+ countries for national ID systems</p>
-                        <div class="project-features">
-                            <h4>Key Features:</h4>
-                            <ul>
-                                <li>Enhanced Registration Processor and Packet Manager modules serving 500M+ citizens globally</li>
-                                <li>Optimized distributed system performance through Kafka tuning, reducing latency by 45%</li>
-                                <li>Implemented end-to-end encryption workflows using PKI standards</li>
-                                <li>Ensured compliance with international data protection regulations</li>
-                            </ul>
-                        </div>
-                        <div class="project-impact">
-                            <strong>Impact:</strong> 500M+ users served, 45% latency reduction
-                        </div>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Java 21</span>
-                            <span class="tech-tag">Spring Boot</span>
-                            <span class="tech-tag">Apache Kafka</span>
-                            <span class="tech-tag">PKI</span>
-                            <span class="tech-tag">Microservices</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/mosip/mosip-platform" target="_blank" class="btn btn-outline">View MOSIP</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow mono">04 · skills</p>
+          <h2>Toolbox.</h2>
         </div>
+        <div class="skills-grid">
+          <div class="card skill reveal"><h3>Languages</h3><div class="chips"><span class="strong">Java (incl. 21)</span><span>JavaScript</span><span>SQL</span></div></div>
+          <div class="card skill reveal"><h3>Frameworks &amp; APIs</h3><div class="chips"><span class="strong">Spring Boot</span><span>Spring Cloud</span><span>Spring Cloud Config</span><span>Spring Retry</span><span>Spring Data JPA</span><span>REST</span><span>GraphQL</span><span>JWT</span><span>Angular</span></div></div>
+          <div class="card skill reveal"><h3>Architecture</h3><div class="chips"><span class="strong">Microservices</span><span>Distributed Systems</span><span>Event-Driven</span><span>Service Mesh</span><span>Retry · Timeout · Fallback</span><span>Optimistic Locking</span><span>Virtual Threads</span><span>Chaos Engineering</span></div></div>
+          <div class="card skill reveal"><h3>Messaging</h3><div class="chips"><span class="strong">Apache Kafka</span><span>Apache Camel</span><span>Apache Pulsar</span></div></div>
+          <div class="card skill reveal"><h3>Data &amp; Storage</h3><div class="chips"><span class="strong">PostgreSQL</span><span>Redis</span><span>Amazon RDS</span><span>MinIO</span></div></div>
+          <div class="card skill reveal"><h3>Cloud &amp; DevOps</h3><div class="chips"><span class="strong">AWS (IAM, RDS)</span><span>Kubernetes</span><span>Docker</span><span>Jenkins</span><span>CI/CD</span></div></div>
+          <div class="card skill reveal"><h3>Observability</h3><div class="chips"><span class="strong">Splunk</span><span>PagerDuty</span><span>Incident Mgmt</span><span>RCA</span></div></div>
+          <div class="card skill reveal"><h3>Security</h3><div class="chips"><span class="strong">AES-256</span><span>RSA</span><span>PKI</span><span>Encryption</span><span>Vuln Remediation</span><span>PI/PII Compliance</span></div></div>
+          <div class="card skill reveal"><h3>Testing</h3><div class="chips"><span class="strong">JUnit</span><span>Mockito</span><span>Integration Tests</span><span>Gatling</span></div></div>
+          <div class="card skill skill-ai reveal"><h3>AI-Assisted Engineering</h3><div class="chips"><span class="strong">Claude Code</span><span>Multi-Agent Automation</span><span>MCP</span></div></div>
+          <div class="card skill reveal"><h3>Tools</h3><div class="chips"><span>Git</span><span>GitHub Enterprise</span><span>Jira</span></div></div>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="section contact-section" id="contact">
-        <div class="container">
-            <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>I'm always interested in discussing new opportunities and challenging projects.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <strong>Email:</strong>
-                            <a href="mailto:khuddusshariff0022@gmail.com">khuddusshariff0022@gmail.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Phone:</strong>
-                            <a href="tel:+917411312203">+91-7411312203</a>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Location:</strong>
-                            <span>Bangalore, Karnataka</span>
-                        </div>
-                        <div class="contact-item">
-                            <strong>LinkedIn:</strong>
-                            <a href="https://www.linkedin.com/in/khuddus-shariff-7131b7207/" target="_blank">linkedin.com/in/khuddus-shariff</a>
-                        </div>
-                        <div class="contact-item">
-                            <strong>GitHub:</strong>
-                            <a href="https://github.com/khuddusshariff0022" target="_blank">github.com/khuddusshariff0022</a>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                        <span class="error-message" id="nameError"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                        <span class="error-message" id="emailError"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                        <span class="error-message" id="messageError"></span>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                    <div class="form-status" id="formStatus"></div>
-                </form>
-            </div>
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow mono">05 · projects</p>
+          <h2>Selected work.</h2>
         </div>
+        <div class="projects-grid">
+          <article class="card project reveal">
+            <p class="project-kind mono">open source · identity</p>
+            <h3>MOSIP — Modular Open Source Identity Platform</h3>
+            <p>Contributor to the open-source platform behind national digital ID programmes. Worked across registration, ID repository and authentication modules with encryption, caching and event-driven processing at scale.</p>
+            <div class="chips"><span>Java 21</span><span>Kafka</span><span>Camel</span><span>Redis</span><span>PKI</span></div>
+            <a href="https://github.com/mosip" target="_blank" rel="noopener" class="link-arrow">github.com/mosip</a>
+          </article>
+          <article class="card project reveal">
+            <p class="project-kind mono">ai automation · team tooling</p>
+            <h3>Claude Code Multi-Agent Triage</h3>
+            <p>Multi-agent system for bug triage and verified daily status reports, built on Claude Code with MCP. In active use across my team at Intuit QBOA.</p>
+            <div class="chips"><span>Claude Code</span><span>MCP</span><span>Multi-Agent</span></div>
+            <a href="#claude" class="link-arrow">How it works</a>
+          </article>
+          <article class="card project reveal">
+            <p class="project-kind mono">full-stack · personal</p>
+            <h3>Kanban Project Management System</h3>
+            <p>Full-stack Kanban board with a Spring Boot backend and Angular frontend. REST APIs for auth, boards and tasks with JWT role-based access control; PostgreSQL via JPA; containerised with Docker.</p>
+            <div class="chips"><span>Spring Boot</span><span>Angular</span><span>JWT</span><span>PostgreSQL</span><span>Docker</span></div>
+            <a href="https://github.com/khuddusshariff0022" target="_blank" rel="noopener" class="link-arrow">GitHub</a>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2024 Khuddus Shariff. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/khuddus-shariff-7131b7207/" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/khuddusshariff0022" target="_blank">GitHub</a>
-                    <a href="mailto:khuddusshariff0022@gmail.com">Email</a>
-                </div>
-            </div>
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact card reveal">
+          <div class="contact-copy">
+            <p class="eyebrow mono">06 · contact</p>
+            <h2>Let's build something reliable.</h2>
+            <p class="lead">Open to senior backend roles and interesting distributed-systems problems. The fastest way to reach me is email.</p>
+            <ul class="contact-list">
+              <li><span class="mono">email</span><a href="mailto:khuddusshariff0022@gmail.com">khuddusshariff0022@gmail.com</a></li>
+              <li><span class="mono">phone</span><a href="tel:+917411312203">+91 74113 12203</a></li>
+              <li><span class="mono">linkedin</span><a href="https://www.linkedin.com/in/khuddus-shariff-7131b7207/" target="_blank" rel="noopener">in/khuddus-shariff-7131b7207</a></li>
+              <li><span class="mono">github</span><a href="https://github.com/khuddusshariff0022" target="_blank" rel="noopener">khuddusshariff0022</a></li>
+            </ul>
+          </div>
+          <form class="contact-form" id="contactForm" novalidate>
+            <label>Name<input type="text" name="name" id="name" autocomplete="name" required></label>
+            <label>Email<input type="email" name="email" id="email" autocomplete="email" required></label>
+            <label>Message<textarea name="message" id="message" rows="5" required></textarea></label>
+            <button type="submit" class="btn btn-primary">Send via email</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
         </div>
-    </footer>
+      </div>
+    </section>
+  </main>
 
-    <script src="app.js"></script>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Khuddus Shariff</p>
+      <p class="mono muted">built with <span class="claude-word">Claude Code</span> · plain HTML/CSS/JS</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
